@@ -19,5 +19,10 @@ namespace Planner
             }
         }
 
+        public Buliding(string address)
+        {
+            _address = address;
+        }
+
     }
 }
