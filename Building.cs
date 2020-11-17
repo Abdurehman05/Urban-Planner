@@ -24,5 +24,15 @@ namespace Planner
             _address = address;
         }
 
+        public void Construct()
+        {
+            _dateConstructed = DateTime.Now;
+        }
+
+        public void Purchase(string name)
+        {
+            _owner = name;
+        }
+
     }
 }
