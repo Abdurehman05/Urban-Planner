@@ -38,9 +38,15 @@ namespace Planner
             Satdium.Construct();
             Satdium.Purchase("Smith Micheale");
 
-            FiveOneTwoEigth.Display();
-            CapitalHill.Display();
-            Satdium.Display();
+            City Nashville = new City();
+            Nashville.AddBuilding(FiveOneTwoEigth);
+            Nashville.AddBuilding(CapitalHill);
+            Nashville.AddBuilding(Satdium);
+
+            foreach (Building building in Nashville.buildings)
+            {
+                building.Display();
+            }
 
 
         }
