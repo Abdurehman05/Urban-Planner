@@ -2,7 +2,7 @@ using System;
 
 namespace Planner
 {
-    public class Buliding
+    public class Building
     {
         private string _designer = "Abdu Kemal";
         private DateTime _dateConstructed;
@@ -11,6 +11,7 @@ namespace Planner
         public int Stories { get; set; }
         public double Width { get; set; }
         public double Depth { get; set; }
+
         public double Volume
         {
             get
@@ -19,7 +20,7 @@ namespace Planner
             }
         }
 
-        public Buliding(string address)
+        public Building(string address)
         {
             _address = address;
         }
@@ -34,5 +35,16 @@ namespace Planner
             _owner = name;
         }
 
+        public void Display()
+        {
+            Console.WriteLine(
+        $@"
+            {_address}
+         ---------------
+    Designed by {_designer}
+    Constructed on {_dateConstructed}
+    Owned by {_owner}
+    {Volume} cubic meters of space");
+        }
     }
 }
