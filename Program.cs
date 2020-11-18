@@ -43,11 +43,12 @@ namespace Planner
             Nashville.AddBuilding(CapitalHill);
             Nashville.AddBuilding(Satdium);
 
+            Nashville.CityInfo();
+
             foreach (Building building in Nashville.buildings)
             {
                 building.Display();
             }
-
 
         }
 
